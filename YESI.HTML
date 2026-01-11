@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>YESI - Calculadora</title>
+  <link rel="stylesheet" href="YESI.CSS">
+</head>
+<body>
+  <div class="container">
+    <h1>Selecciona una opción</h1>
+
+    <div class="controls">
+      <button id="btn-destruccion" class="selector">Daño material</button>
+      <button id="btn-tasa" class="selector">Tasa de justicia</button>
+    </div>
+
+   <!-- ...existing code... -->
+    <div id="destruccion" class="form-section" style="display:none;">
+      <h2>Verificación daño material</h2>
+      <div class="row">
+        <label>Valor asegurado: <input id="valor_asegurado" class="num-input" type="text" inputmode="decimal" placeholder="0,00"></label>
+        <label>Presupuesto reparación: <input id="presupuesto" class="num-input" type="text" inputmode="decimal" placeholder="0,00"></label>
+      </div>
+      <button id="calcular_destruccion">Calcular</button>
+    </div>
+
+    <div id="tasa" class="form-section" style="display:none;">
+      <h2>Tasa de justicia</h2>
+      <div class="row">
+        <label>Valor demanda: <input id="valor_demanda" class="num-input" type="text" inputmode="decimal" placeholder="0,00"></label>
+        <label>Valor conciliación: <input id="valor_consiliacion" class="num-input" type="text" inputmode="decimal" placeholder="0,00"></label>
+      </div>
+      <button id="calcular_tasa">Calcular</button>
+    </div>
+<!-- ...existing code... -->
+
+    <div id="resultado" style="margin-top:16px; font-weight:bold; display:none;"></div>
+  </div>
+
+  <script src="YESI.JS"></script>
+</body>
+</html>
